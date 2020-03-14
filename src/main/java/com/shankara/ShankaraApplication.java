@@ -7,7 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ShankaraApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ShankaraApplication.class, args);
+	    SpringApplication.run(ShankaraApplication.class, args);
+	    System.out.println("Running Application");
 	}
 
 }

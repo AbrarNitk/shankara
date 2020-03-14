@@ -1,0 +1,7 @@
+Django==3.0.3
+black==19.10b0
+django-encrypted-id==0.3.2
+ipython==7.12.0
+django-extensions==2.2.8
+structlog==20.1.0
+djangorestframework==3.11.0
