@@ -43,10 +43,12 @@ function createsuperuser() {
 }
 
 function recreatedb() {
-  psql -h pg -U postgres -c "CREATE USER root IF NOT EXISTS;"
-  psql -h pg -U postgres -c "ALTER USER root WITH SUPERUSER;"
+  psql -h pg -U postgres -c "DROP USER IF EXISTS shankara;"
+  psql -h pg -U postgres -c "CREATE USER shankara;"
+  psql -h pg -U postgres -c "ALTER USER shankara WITH SUPERUSER;"
   psql -h pg -c "DROP DATABASE IF EXISTS shankara;" template1
   psql -h pg -c "CREATE DATABASE shankara" template1
+  psql -h pg -c "CREATE EXTENSION IF NOT EXISTS citext;" shankara
   migrate $*
 }
 
