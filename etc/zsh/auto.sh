@@ -56,7 +56,7 @@ function pyfmt() {
   black "$PROJDIR"/dj
 }
 
-function cm() {
+function cmp() {
   mvn -B package -DskipTests=true
 }
 
@@ -69,5 +69,5 @@ function run_dj() {
 }
 
 function cmr() {
-  cm && run
+  cmp && run
 }
