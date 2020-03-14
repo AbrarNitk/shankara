@@ -8,7 +8,7 @@ public class ShankaraApplication {
 
 	public static void main(String[] args) {
 	    SpringApplication.run(ShankaraApplication.class, args);
-	    System.out.println("Running Application");
+	    System.out.println("Running Application")
 	}
 
 }

@@ -1,0 +1,20 @@
+environment: local
+
+spring:
+  datasource:
+    url:
+      jdbc:postgresql://127.0.0.1/shankara
+    username:
+      root
+    password:
+    platform:
+      postgres
+    driver-class-name:
+      org.postgresql.Driver
+  jpa:
+    database-platform:
+      org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: none
+    generate-ddl: false
+    show-sql: true
